@@ -14,15 +14,10 @@ def line():
 def expon():
     print("Div Line:------")
     val_a = input("Your Value for a: ")
-    val_x = input("Your expresion value (+/-) ")
     val_b = input("Your Value for b: ")
     val_t = input("Your Value for x: ")
-    if val_x == "+":
-        val_y = (float(val_a) * (1 + float(val_b)) ** float(val_t))
-        print("Your valye for y is " + str(val_y))
-    if val_x == "-":
-        val_y = (float(val_a) * (1 - float(val_b)) ** float(val_t))
-        print("Your value for y is" + str(val_y))
+    val_y = (float(val_a) * (float(val_b)) ** float(val_t))
+    print("Your valye for y is " + str(val_y))
 #Intro
 print("""
 Welcome To
