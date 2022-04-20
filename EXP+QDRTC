@@ -1,0 +1,42 @@
+#EXP+QDRTC
+#Imports
+import time
+    #Functions
+#Base Equasion setup
+def line():
+    print("Div Line:------")
+    val_x = input("Your Value for x: ")
+    val_a = input("Your Value for a: ")
+    val_b = input("Your Value for b: ")
+    val_c = input("Your Value for c: ")
+#Vertex
+    vertex = (-(val_b)) / (2(val_a))
+    print("Vertex: " + vertex)
+#Intro
+print("""
+Welcome To
+ __________   __________          
+|   ____\  \ /  /|   _   \   _   
+|  |__   \  V  / |  |_)  | _| |_ 
+|   __|   >   <  |   ____/|_   _|QDRTC
+|  |____ /  _  \ |  |       |_|  
+|_______/__/ \__\| _|             
+ EXPplusQDRTCv1.1.6
+ Durian Technologies 2022
+ By TR77""")
+time.sleep(1.5)
+#While
+while 1 == 1:
+#Function Type
+    ftyp = input("""Div Line:------
+    Function type
+    "q" = Quit Program
+    "e" = Exponential Function (y=a(b)^x)
+    "l" = Linear Function (y=mx+b)
+    Input: """)
+    if ftyp == "q":
+        quit()
+    if ftyp == "e":
+        expon()
+    if ftyp == "l":
+        line()
