@@ -5,13 +5,25 @@ import time
 #Base Equasion setup
 def line():
     print("Div Line:------")
-    val_x = input("Your Value for x: ")
-    val_a = input("Your Value for a: ")
-    val_b = input("Your Value for b: ")
-    val_c = input("Your Value for c: ")
+    val_a = int(input("Your Value for a: "))
+    val_b = int(input("Your Value for b: "))
+    val_c = int(input("Your Value for c: "))
+    time.sleep(.5)
+#Equasion
+    print("Div Line:------")
+    print("Your Equasion = " + str(val_a) + "x**2 + " + str(val_b) + "x + " + str(val_c))
+    time.sleep(.5)
 #Vertex
-    vertex = (-(val_b)) / (2(val_a))
-    print("Vertex: " + vertex)
+    print("Div Line:------")
+    vertex = ((-1) * (val_b)) / (2 * (val_a))
+    Tvertex = vertex
+    print("Vertex: " + str(Tvertex))
+    time.sleep(.5)
+#y-int
+    print("Div Line:------")
+    y_int = ((val_a ** 0) + (val_b * 0) + (val_c))
+    print("y-int: " + str(y_int))
+    time.sleep(.5)
 #Intro
 print("""
 Welcome To
@@ -21,22 +33,11 @@ Welcome To
 |   __|   >   <  |   ____/|_   _|QDRTC
 |  |____ /  _  \ |  |       |_|  
 |_______/__/ \__\| _|             
- EXPplusQDRTCv1.1.6
+ EXPplusQDRTCv1.2.3
  Durian Technologies 2022
  By TR77""")
-time.sleep(1.5)
+time.sleep(.5)
 #While
 while 1 == 1:
-#Function Type
-    ftyp = input("""Div Line:------
-    Function type
-    "q" = Quit Program
-    "e" = Exponential Function (y=a(b)^x)
-    "l" = Linear Function (y=mx+b)
-    Input: """)
-    if ftyp == "q":
-        quit()
-    if ftyp == "e":
-        expon()
-    if ftyp == "l":
-        line()
+#Function
+    line()
