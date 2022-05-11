@@ -1,6 +1,7 @@
 #EXP+QDRTC
 #Imports
 import time
+import math
     #Functions
 #Base Equasion setup
 def base_info():
@@ -24,9 +25,28 @@ def base_info():
     y_int = ((val_a ** 0) + (val_b * 0) + (val_c))
     print("y-int: " + str(y_int))
     time.sleep(.5)
+#Discriminant (b^2 - 4(a)(c))
+    print("Div Line:------")
+    disc = ((val_b ** 2) - (4(val_a)(val_c)))
+    if disc < 0:
+        deez = 2
+    if disc == 0:
+        deez = 1
+    if disc > 0:
+        deez = -2
+#Solutions (-b +/- sqrt(disc))
+    if deez == 2:
+        solved_x1 = (((-1) * val_b) - math.sqrt((4 * val_a * val_c)))
+        solved_x2 = (((-1) * val_b) + math.sqrt((4 * val_a * val_c)))
+        print("Solutions are: {" + str(solved_x1) + "," + str(solved_x2) + "}.")
+    if deez == 0:
+        solved_x1 = (((-1) * val_b) - math.sqrt((4 * val_a * val_c)))
+        print("Solutions are: {" + str(solved_x1) + "," + str(solved_x2) + "}.")
+    if deez == -1:
+        print("Solution contains no real numbers.")
+    time.sleep(.5)
 #RETURNS
     return val_a, val_b, val_c
-
 #prompt for x + solve for "y"
 def value(val_a, val_b, val_c):
     print("Div Line:------")
@@ -43,7 +63,7 @@ Welcome To
 |   __|   >   <  |   ____/|_   _|QDRTC
 |  |____ /  _  \ |  |       |_|  
 |_______/__/ \__\| _|             
- EXPplusQDRTCv1.2.5
+ EXPplusQDRTCv2.0.0
  Durian Technologies 2022
  By TR77""")
 time.sleep(.5)
