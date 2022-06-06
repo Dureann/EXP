@@ -59,12 +59,12 @@ Welcome To
 |   __|   >   <  |   ____/|_   _|QDRTC
 |  |____ /  _  \ |  |       |_|  
 |_______/__/ \__\| _|             
- EXPplusQDRTCv2.0.7
+ EXPplusQDRTCv2.0.9
  Durian Technologies 2022
  By TR77""")
 time.sleep(.5)
 #Function
 base_info()
 time.sleep(2)
-print("Thank You for using.")
+print("Thank You for using. Durian Technologies 2022.")
 quit()
