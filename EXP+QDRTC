@@ -1,33 +1,27 @@
 #EXP+QDRTC
+
 #Imports
 import time
 import math
+
+
     #Functions
+
 #Base Equasion setup
 def base_info():
-    print("Div Line:------")
+    print(" ")
     val_a = int(input("Your Value for a: "))
     val_b = int(input("Your Value for b: "))
     val_c = int(input("Your Value for c: "))
-    time.sleep(.5)
 #Equasion (ax**2 + bx + c)
-    print("Div Line:------")
-    print("Your Equasion = " + str(val_a) + "x**2 + " + str(val_b) + "x + " + str(val_c))
-    time.sleep(.5)
+    print("Your Equasion = " + str(val_a) + "x^2 + " + str(val_b) + "x + " + str(val_c))
 #Vertex (-b/2(a))
-    print("Div Line:------")
     vertex = ((-1) * (val_b)) / (2 * (val_a))
     Tvertex = vertex
-    print("Vertex: " + str(Tvertex))
-    time.sleep(.5)
 #y-int (ax**2 + bx + c (x = 0))
-    print("Div Line:------")
     y_int = ((val_a ** 0) + (val_b * 0) + (val_c))
-    print("y-int: " + str(y_int))
-    time.sleep(.5)
 #Discriminant (b^2 - 4(a)(c))
-    print("Div Line:------")
-    disc = ((val_b ** 2) - (4(val_a)(val_c)))
+    disc = ((val_b ** 2) - (4 * val_a * val_c))
     if disc < 0:
         deez = 2
     if disc == 0:
@@ -38,22 +32,24 @@ def base_info():
     if deez == 2:
         solved_x1 = (((-1) * val_b) - math.sqrt((4 * val_a * val_c)))
         solved_x2 = (((-1) * val_b) + math.sqrt((4 * val_a * val_c)))
-        print("Solutions are: {" + str(solved_x1) + "," + str(solved_x2) + "}.")
     if deez == 0:
         solved_x1 = (((-1) * val_b) - math.sqrt((4 * val_a * val_c)))
+
+
+#Answers (base)
+    #Equasion output already printed
+    print("Vertex: " + str(Tvertex))
+    print("y-int: " + str(y_int))
+
+    #Answers (solutions)
+    if deez == 2:
+        print("Solutions are: {" + str(solved_x1) + "," + str(solved_x2) + "}.")
+    if deez == 0:
         print("Solutions are: {" + str(solved_x1) + "," + str(solved_x2) + "}.")
     if deez == -1:
         print("Solution contains no real numbers.")
-    time.sleep(.5)
-#RETURNS
-    return val_a, val_b, val_c
-#prompt for x + solve for "y"
-def value(val_a, val_b, val_c):
-    print("Div Line:------")
-    val_x = int(input("Your Value for x"))
-    solved_y = ( (int(val_a) * int(val_x) ** 2) + (int(val_b) * (val_x)) + (int(val_c)) )
-    print("While x = " + str(val_x) + ", point =")
-    print("(" + val_x + "," + solved_y + ")")
+
+
 #Intro
 print("""
 Welcome To
@@ -63,12 +59,12 @@ Welcome To
 |   __|   >   <  |   ____/|_   _|QDRTC
 |  |____ /  _  \ |  |       |_|  
 |_______/__/ \__\| _|             
- EXPplusQDRTCv2.0.0
+ EXPplusQDRTCv2.0.7
  Durian Technologies 2022
  By TR77""")
 time.sleep(.5)
-#While
-while 1 == 1:
 #Function
-    base_info()
-    value(val_a, val_b, val_c)
+base_info()
+time.sleep(2)
+print("Thank You for using.")
+quit()
