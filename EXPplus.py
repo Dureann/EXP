@@ -28,8 +28,8 @@ Welcome To
 |  |____ /  _  \ |  |       |_|  
 |_______/__/ \__\| _|             
  EXPplusv1.1.6
- Durian Technologies 2022
- By TR77""")
+ Duraenn
+ S3CO 2022""")
 time.sleep(1.5)
 #While
 while 1 == 1:
