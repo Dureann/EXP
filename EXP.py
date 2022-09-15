@@ -12,8 +12,8 @@ Welcome To
 |  |____ /  _  \ |  |      
 |_______/__/ \__\|__|      
  EXPv1.1.1
- Durian Technologies 2022
- By TR77""")
+ Duraenn
+ S3CO 2022""")
 while (1 == 1):
     val_a = input("Your Value for a: ")
     val_x = input("Your expresion value (p/n) ")
